@@ -3,6 +3,7 @@ FROM php:8.2-apache
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
+    openssh-server \
     nano vim \
     ssmtp \
     libpng-dev \
